@@ -1,0 +1,177 @@
+
+/*Header and nav*/
+
+header {
+    float: left;
+    margin: 0 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    background-color: gray;
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+ol {
+    padding: 0;
+    display: inline-block;
+}
+
+nav {
+    text-align: left;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+nav li {
+    display: inline-block;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#Head {
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/*Images*/
+
+.TopImg {
+    Width: 100%;
+    height: 660px;
+}
+
+.img {
+    height: 400px;
+    width: 400px;
+    min-width: 15%;
+    min-height: 15%;
+    margin: 0;
+    padding: 3px 0;
+}
+
+#overlay {
+    background:rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+}
+  
+#overlay img {
+   margin-top: 10%; 
+}
+  
+    #overlay p {
+    color:white; 
+}
+
+
+/* Misc */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Link {
+    padding-top: 95px;
+}
+
+.form{
+    display:block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+p {
+    margin-left: 40px;
+}
+
+form {
+    margin-left: 40px;
+}
+
+input {
+    margin-top: 5px;
+}
+
+/* Map and Footer */
+
+.mapouter {
+
+    height:500px;
+    width:600px;
+}
+
+.gmap_canvas {
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+iframe{
+    margin-left: 60%;
+    margin-right: 40%;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    header {
+          text-align: center;
+    }
+
+    nav {
+          text-align: center;
+    }
+
+    .img {
+        max-width: 90%;
+        max-height: 300px;
+    }
+
+    .TopImg {
+        width: 0%;
+        height: 0%;
+    }
+}

@@ -1,0 +1,62 @@
+<html id="html">
+<!DOCTYPE html>
+ <head>
+            <meta charset="utf-8">
+            <title>Project</title>
+            <link href="style.css" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+ </head>
+<!--  Header/Nav  -->
+<Header>
+    <h1 class="group">Travel name</h1>
+    <nav>
+        <ol id="nav">
+            <li><a href="#Top">About</a></li>
+            <li><a href="#GalleryLink">Gallery</a></li>
+            <li><a href="#Contact">Contact us</a></li>
+        </ol>
+    </nav>
+</header>
+<img src="Forests.jpg" class="TopImg">
+<br class="group">
+<body>
+<!--  Body  -->
+<h2 id="Top" class="Link">About</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id nisl id nisl vulputate ullamcorper sit amet nec erat. Suspendisse iaculis pellentesque augue, vel aliquet lacus interdum eu. Sed vitae metus pulvinar neque rutrum eleifend eget quis purus. Fusce congue nisl nec felis placerat consectetur. Morbi turpis lectus, mattis a feugiat ac, ornare at urna. Integer vel orci feugiat elit gravida bibendum. Vestibulum aliquam facilisis libero, vitae sollicitudin nulla fringilla dapibus. Ut eu velit nisi. Aenean lacinia erat vitae mauris gravida interdum. Maecenas ultricies scelerisque justo, eu tempus arcu consequat eget. </p>
+<p>Nullam nec quam ut mi finibus ullamcorper. Duis tincidunt tortor nec orci feugiat, sit amet mollis risus aliquam. Mauris vel blandit nisl, eu interdum justo. Phasellus ac feugiat risus. Donec in augue ut nunc imperdiet aliquam. Mauris convallis convallis aliquam. Integer vel facilisis turpis, ut consequat metus. Nunc sodales elit eget scelerisque ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean eget nisi a arcu euismod imperdiet. Ut lorem metus, molestie eu gravida sit amet, euismod non risus. </p>
+<h2 id="GalleryLink" class="Link">Gallery</h2>
+<ul id="imageGallery">
+<li><a href="bridge.jpg"><img src="bridge.jpg" class="img"></a></li>
+<li><a href="bridge.jpg"><img src="bridge.jpg" class="img"></a></li>
+<li><a href="bridge.jpg"><img src="bridge.jpg" class="img"></a></li>
+</ul>
+<br>
+<h2 class="Link" id="Contact">Contact us</h2>
+<form id="form1" action="submission.html">
+    <label class="form">Name:</label>
+    <input class="form" type="text" name="name">
+    <label class="form">Email:</label>
+    <input class="form" type="text" name="email">
+    <label class="form">Phone:</label>
+    <input class="form" type="phone" name="phone">
+    <input type="button" onclick="button()" value="Submit">
+</form>
+<!--  Google Map  -->
+<div class="mapouter">
+<div class="gmap_canvas">
+    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=34.816903%2C%20-87.670216&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    </iframe>
+</div>
+</div>
+<!--  Scripts  -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    function button(){
+        document.getElementById("form1").submit();
+    }
+</script>
+</body>
+<footer>Copyright Josh Hines 2017</footer>
+</html>
